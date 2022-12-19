@@ -1,5 +1,5 @@
 import { Recipe } from "./recipe.model"
-import { EventEmitter, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Ingredient } from "../shared/ingredient.model";
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
@@ -8,7 +8,6 @@ export class RecipeService {
     test1 = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Breitenlesau_Krug_Br%C3%A4u_Schnitzel.JPG/330px-Breitenlesau_Krug_Br%C3%A4u_Schnitzel.JPG'
     test2 = 'https://media.istockphoto.com/id/618630648/photo/homemade-cheese-smash-burger.jpg?s=612x612&w=0&k=20&c=OGgJ0M1_omgjTOrpz_uRt2S48BiHVUrGNg57Qc4ljuA='
     
-    recipeSelected = new EventEmitter<Recipe>()
     
     private recipes: Recipe[] = [
         new Recipe('Tasty Schnitzel', 
